@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ListActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/list_logo"
+        android:src="@mipmap/logo"/>
+
+    <EditText
+        android:id="@+id/list_search_bar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/list_logo"
+        android:hint="@string/search_hint"
+        android:drawableStart="@drawable/ic_search_black_24dp"
+        android:background="@drawable/edit_text_border"
+        android:inputType="text"
+        android:importantForAutofill="no" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/list_activity"
+        android:layout_below="@+id/list_search_bar"
+        android:name="com.example.activitycentral.ListFragment"/>
+
+</RelativeLayout>

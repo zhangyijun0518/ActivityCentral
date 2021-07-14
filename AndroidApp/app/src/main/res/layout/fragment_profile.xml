@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_title"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_account_circle_black_24dp"/>
+
+    <EditText
+        android:id="@+id/profile_firstname"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:hint="Anne"
+        android:background="#e0e0e0"/>
+
+    <EditText
+        android:id="@+id/profile_lastname"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:hint="Chang"
+        android:background="#e0e0e0"/>
+
+    <TextView
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="8888888@gmail.com"
+        android:textColor="#bdbdbd"
+        android:background="#e0e0e0"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:text="@string/change_password"
+        android:textColor="#9e9e9e"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center|left"
+        android:text="@string/like_activity"
+        android:textColor="#9e9e9e"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:id="@+id/signup_button"
+        android:text="@string/save"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

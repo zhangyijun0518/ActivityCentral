@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">ActivityCentral</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Activity Central</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_search">Search</string>
+    <string name="menu_post">Post Board</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!--strings for search fragment -->
+    <string name="search_hint">Search Activity or Training Course</string>
+
+    <!--strings for login activity -->
+    <string name="username_hint">EMAIL</string>
+    <string name="password_hint">PASSWORD</string>
+    <string name="login_button">LOGIN WITH EMAIL</string>
+    <string name="no_account">Do not have an account?</string>
+    <string name="sign_up">Register Here</string>
+    <string name="privacy">By continuing, you accept our Privacy Policy and Terms of Use.</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--strings for sign up activity -->
+    <string name="register">REGISTER</string>
+    <string name="firstname">FIRST NAME</string>
+    <string name="lastname">LAST NAME</string>
+    <string name="email">EMAIL</string>
+    <string name="password">PASSWORD</string>
+    <string name="password_confirm">CONFIRM PASSWORD</string>
+    <string name="signup">SIGN UP</string>
+
+    <!--strings for profile activity -->
+    <string name="profile_title">MY PROFILE</string>
+    <string name="change_password">CHANGE PASSWORD</string>
+    <string name="like_activity">YOUR LIKE ACTIVITY</string>
+    <string name="save">SAVE CHANGES</string>
+
+    <!--strings for post fragment -->
+    <string name="post_name">Activity Name</string>
+    <string name="post_date">Activity Date</string>
+    <string name="post_tag">Tag</string>
+    <string name="post_organizer">Organizer</string>
+    <string name="post_description">Description</string>
+    <string name="post_location">Location</string>
+    <string name="post_price">Price</string>
+    <string name="post_name_hint">What is your activity name?</string>
+    <string name="post_date_hint">Select your activity date.</string>
+    <string name="post_organizer_hint">Who is organizing the activity?</string>
+    <string name="post_description_hint">Describe your activity or other information.</string>
+    <string name="post_address">Address</string>
+    <string name="post_city">City</string>
+    <string name="post_zipcode">Zip Code</string>
+    <string name="post_price_hint">Input your activity price.</string>
+    <string name="post_upload">Upload</string>
+
+    <string-array name="tag">
+        <item>Running</item>
+        <item>Camping</item>
+        <item>Hiking</item>
+        <item>Marathon</item>
+        <item>Yoga</item>
+        <item>Football</item>
+        <item>Basketball</item>
+        <item>Music</item>
+        <item>Werewolf</item>
+        <item>Painting</item>
+        <item>Writing</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>CA</item>
+        <item>AZ</item>
+        <item>NV</item>
+        <item>OR</item>
+        <item>WA</item>
+        <item>NM</item>
+        <item>TX</item>
+        <item>UT</item>
+        <item>ID</item>
+        <item>WY</item>
+    </string-array>
+
+    <!--strings for detail activity -->
+    <string name="detail_description">It’s time to roll out your yoga mat and discover the combination of physical and mental exercises that for thousands of years have hooked yoga practitioners around the globe. The beauty of yoga is that you don’t have to be a yogi or yogini to reap the benefits.</string>
+
+
+</resources>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_name"
+            style="@style/DescTitle"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/post_name_hint"
+            android:inputType="textPersonName"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_date"
+            style="@style/DescTitle"/>
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/post_date_hint"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_tag"
+            style="@style/DescTitle"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/tag"
+            android:spinnerMode="dropdown"
+            android:layout_marginTop="10dp"
+            style="@android:style/Widget.Holo.Light.Spinner"/>
+
+        <TextView
+            android:id="@+id/tvOrganizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_organizer"
+            style="@style/DescTitle"/>
+
+        <EditText
+            android:id="@+id/etOrganizer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/post_organizer_hint"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_description"
+            style="@style/DescTitle"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="12sp"
+            android:hint="@string/post_description_hint"
+            android:background="@drawable/input_box_border" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_location"
+            style="@style/DescTitle"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/post_address"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/post_city"
+            android:inputType="text"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etZipcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:hint="@string/post_zipcode"
+                android:inputType="number"
+                android:textSize="12sp"
+                android:layout_marginRight="35dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:entries="@array/state"
+                android:spinnerMode="dropdown"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                >
+            </androidx.appcompat.widget.AppCompatSpinner>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/post_price"
+            style="@style/DescTitle"/>
+
+        <EditText
+            android:id="@+id/editTextPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/post_price_hint"
+            android:inputType="number"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:id="@+id/post_button"
+            android:text="@string/post_upload"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"/>
+        
+
+    </LinearLayout>
+</ScrollView>

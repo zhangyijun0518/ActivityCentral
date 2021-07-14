@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".DetailActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/activity_image"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_like"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="310dp"
+            android:src="@drawable/like_button" />
+
+        <ImageView
+            android:id="@+id/detail_share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_share_black_24dp"
+            android:layout_toRightOf="@+id/detail_like"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:id="@+id/detail_name"
+                style="@style/DescTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Yoga Activity"
+                android:textSize="26sp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_description"
+                    android:src="@drawable/ic_description_black_24dp"/>
+                <TextView
+                    android:id="@+id/detail_description_title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon_description"
+                    android:text="@string/post_description" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/detail_description"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_date"
+                    android:src="@drawable/ic_date_range_black_24dp"/>
+                <TextView
+                    android:id="@+id/detail_date_title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon_date"
+                    android:text="@string/post_date" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="05/20/2020"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_location"
+                    android:src="@drawable/ic_location_on_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/detail_location_title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/icon_location"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/post_location" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1 Washington Sq, San Jose, CA 95192"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_price"
+                    android:src="@drawable/ic_money_on_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/detail_price_title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon_price"
+                    android:text="@string/post_price" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Free"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_organizer"
+                    android:src="@drawable/ic_face_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/detail_organizer_title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon_organizer"
+                    android:text="@string/post_organizer" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_organizer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Han Mary"
+                android:layout_marginLeft="30dp"/>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="#eeeeee"
+                android:layout_marginTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/icon_tag"
+                    android:src="@drawable/ic_flag_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/detail_tag_title"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/icon_tag"
+                    android:text="@string/post_tag" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/detail_tag"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Yoga"
+                android:layout_marginLeft="30dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
